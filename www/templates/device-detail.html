@@ -1,15 +1,33 @@
-<!--
-This template loads for the 'tab.friend-detail' state (app.js)
-'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
-The FriendsCtrl pulls data from the Friends service (service.js)
-The Friends service returns an array of friend data
--->
-<ion-view view-title="{{device.name}}">
+<!-- This is for when the angular is properly hooked up
+<ion-view view-title="{{selectedDevice.name}}">
   <ion-content class="padding">
-    <img ng-src="{{device.face}}" style="width: 64px; height: 64px">
+    <img ng-src="{{selectedDevice.pic}}" style="width: 64px; height: 64px">
     <h3>Notes</h3>
     <p>
-      {{device.notes}}
+      {{selectedDevice.notes}}
     </p>
   </ion-content>
 </ion-view>
+ -->
+
+<div class="list">
+  <a class="backButton" href="#/tab/search">Back to Search</a>
+</div>
+
+<div class="deviceInfo">
+	<h3 class="name">Device 1</h3>
+	<div class="task">
+		<h4>Turn It On</h4>
+		<p class="detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in lacus vulputate, sagittis ante ac, eleifend lacus. Donec porttitor nisi quis tellus tristique, ut pulvinar ex tempor.</p>
+	</div>
+	<div class="task">
+		<h4>Move It Around</h4>
+		<p class="detail">Cras maximus nisl ut arcu congue commodo. Duis rhoncus magna a hendrerit lacinia. Aliquam fringilla, enim id fringilla mollis, lacus justo volutpat sapien, a efficitur lorem enim at sapien.</p>
+	</div>
+	<div class="task video">
+		<h4>Perform Brain Surgery</h4>
+		<video>
+			<source src="movie.mp4" type="video/mp4">
+		</video>
+	</div>
+</div>

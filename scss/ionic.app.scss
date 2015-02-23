@@ -64,7 +64,12 @@ $linkColor: #BDDCFF;
 
 .categoriesContainer {
 	width: 100%;
-	margin: 0 auto;
+	margin: 80px auto;
+
+	h2 {
+		text-align: center;
+		margin: 30px;
+	}
 }
 
 .category {
@@ -90,6 +95,28 @@ $linkColor: #BDDCFF;
 	}
 }
 
+/* Styling for device page, when it's implemented */
+
+.devicesContainer {
+	@extend .categoriesContainer;
+	max-width: 450px;
+
+	h2 {
+		text-align: center;
+	}
+}
+
+.device {
+	@extend .category;
+	width: 200px;
+	display: inline-block;
+	margin: 10px;
+
+	h3 {
+		margin: 30px 40px;
+	}
+}
+
 #searchButton {
 	background-color: $buttonHover;
 	height: 50px;
@@ -112,4 +139,41 @@ $linkColor: #BDDCFF;
 
 .tab-item {
 	color: white !important;
+}
+
+.backButton {
+	margin: 60px auto 10px auto;
+	width: 100px;
+	display: block;
+}
+
+/* Device Info Page */
+
+.deviceInfo {
+	width: 100%;
+	min-height: 500px;
+	max-width: 720px;
+	margin: 20px auto;
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: $buttonHover;
+	padding: 10px 30px;
+
+	.name {
+		margin: 30px 40px 0 10px;
+		display: inline-block;
+		float: left;
+		font-weight: bold;
+		height: 100%;
+		min-height: 500px;
+	}
+}
+
+.task {
+	margin-top: 30px;
+
+	video {
+		width: 300px;
+		margin: 10px;
+	}
 }

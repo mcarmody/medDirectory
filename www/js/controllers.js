@@ -1,6 +1,8 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope) {})
+.controller('DashCtrl', function($scope) {
+
+})
 
 .controller('ChatsCtrl', function($scope, Chats) {
   $scope.chats = Chats.all();
@@ -11,6 +13,9 @@ angular.module('starter.controllers', [])
 
 .controller('DevicesCtrl', function($scope, Devices) {
   $scope.devices = Devices.all;
+})
+
+.controller('SearchCtrl', function($scope) {
 })
 
 .controller('DeviceInfoCtrl', function($scope, $stateParams, Devices) {
