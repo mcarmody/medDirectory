@@ -7031,13 +7031,19 @@ a.button {
   .search label {
     border-radius: 5px !important; }
 
-.orBox {
+.orBox, .topLabel {
   margin: 0 auto;
   width: 300px;
   font-size: 16pt;
   text-align: center; }
-  .orBox p {
-    margin: 30px; }
+  .orBox p, .orBox .topLabel {
+    margin: 15px; }
+    .orBox p:first-child, .orBox .topLabel {
+      font-weight: bold;
+      margin: 30px; }
+
+.topLabel {
+  margin-top: 20px; }
 
 .categoriesContainer {
   margin: 0 auto;

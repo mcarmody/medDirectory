@@ -56,8 +56,18 @@ $headerColor: #2F3740;
 	text-align: center;
 
 	p {
-		margin: 30px;
+		margin:15px;
+
+		&:first-child {
+			font-weight: bold;
+			margin: 30px;
+		}
 	}
+}
+
+.topLabel {
+	@extend .orBox;
+	margin-top: 20px;
 }
 
 .categoriesContainer {
