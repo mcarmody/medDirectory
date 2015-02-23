@@ -1,0 +1,12 @@
+{
+  "name": "medDirectory",
+  "app_id": "ed46cf7e",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}

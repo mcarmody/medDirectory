@@ -1,0 +1,10 @@
+<ion-view view-title="Devices">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-avatar" ng-repeat="device in devices" type="item-text-wrap" href="#/tab/device/{{device.id}}">
+        <img ng-src="{{device.face}}">
+        <h2>{{device.name}}</h2>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
