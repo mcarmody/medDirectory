@@ -7027,7 +7027,8 @@ a.button {
 .search {
   width: 100%;
   max-width: 300px;
-  margin: 20px auto !important; }
+  margin: 20px auto !important;
+  margin-top: 30px; }
   .search label {
     border-radius: 5px !important; }
 
@@ -7047,7 +7048,9 @@ a.button {
 
 .categoriesContainer {
   margin: 0 auto;
-  width: 728px; }
+  width: 100%;
+  padding: 10px;
+  max-width: 748px; }
 
 .category {
   width: 220px;
